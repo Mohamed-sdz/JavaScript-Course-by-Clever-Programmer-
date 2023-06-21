@@ -8,7 +8,7 @@ tags: javascript
 
 ---
 
-Welcome to my developer blog! Today, I'll delve into two powerful hooks in React: useEffect and useState. These hooks have revolutionized the way developers build applications by providing a more elegant and efficient approach to managing state and side effects. In this article, we'll discuss the features, benefits, and real-world examples of these hooks, highlighting why they are an excellent choice for building robust and scalable React applications.
+Welcome to my developer blog! Today, I'll delve into two powerful hooks in React: useEffect and useState. These hooks have revolutionized the way developers build applications by providing a more elegant and efficient approach to managing state and side effects. In this article, I'll discuss the features, benefits, and real-world examples of these hooks, highlighting why they are an excellent choice for building robust and scalable React applications.
 
 ## useState: Managing State Made Simple
 
@@ -33,7 +33,6 @@ const Counter = () => {
 };
 
 export default Counter;
-
 ```
 
 In the above code, we initialize the state variable `count` to 0 using `useState(0)`. We also receive a function `setCount` to update the state. By calling `setCount`, we can modify the state value, and React will automatically re-render the component to reflect the updated state. This simple yet powerful pattern helps us manage component state effortlessly.
@@ -80,7 +79,6 @@ const UserProfile = ({ userId }) => {
 };
 
 export default UserProfile;
-
 ```
 
 In this example, the `useEffect` hook is used to fetch user data when the `userId` prop changes. By providing the dependency array `[userId]`, we ensure that the effect is triggered only when the `userId` prop updates. This prevents unnecessary API calls and optimizes performance.
