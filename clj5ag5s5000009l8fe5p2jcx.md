@@ -35,7 +35,7 @@ const Counter = () => {
 export default Counter;
 ```
 
-In the above code, we initialize the state variable `count` to 0 using `useState(0)`. We also receive a function `setCount` to update the state. By calling `setCount`, we can modify the state value, and React will automatically re-render the component to reflect the updated state. This simple yet powerful pattern helps us manage component state effortlessly.
+In the above code, I initialize the state variable `count` to 0 using `useState(0)`. I also receive a function `setCount` to update the state. By calling `setCount`, I can modify the state value, and React will automatically re-render the component to reflect the updated state. This simple yet powerful pattern helps us manage component state effortlessly.
 
 The benefits of `useState`:
 
@@ -81,7 +81,7 @@ const UserProfile = ({ userId }) => {
 export default UserProfile;
 ```
 
-In this example, the `useEffect` hook is used to fetch user data when the `userId` prop changes. By providing the dependency array `[userId]`, we ensure that the effect is triggered only when the `userId` prop updates. This prevents unnecessary API calls and optimizes performance.
+In this example, the `useEffect` hook is used to fetch user data when the `userId` prop changes. By providing the dependency array `[userId]`, I ensure that the effect is triggered only when the `userId` prop updates. This prevents unnecessary API calls and optimizes performance.
 
 The advantages of useEffect:
 
