@@ -8,7 +8,7 @@ tags: javascript, web-development, reactjs, coding
 
 ---
 
-Being a junior React developer is an exciting phase in your career. React is a popular JavaScript library for building user interfaces, and it offers a lot of flexibility and power. However, like any other technology, it's common to make mistakes when starting. In this blog post, we'll explore some common mistakes that junior React developers often make and guide how to avoid them. By learning from these mistakes, you can become a more proficient React developer and build high-quality applications.
+Being a junior React developer is an exciting phase in your career. React is a popular JavaScript library for building user interfaces, and it offers a lot of flexibility and power. However, like any other technology, it's common to make mistakes when starting. In this blog post, I'll explore some common mistakes that junior React developers often make and guide how to avoid them. By learning from these mistakes, you can become a more proficient React developer and build high-quality applications.
 
 1. **Not Understanding the React Component Lifecycle:**
     
@@ -37,7 +37,6 @@ class MyComponent extends React.Component {
     return <div>My Component</div>;
   }
 }
-
 ```
 
 Solution: Remember to unsubscribe from event listeners in the `componentWillUnmount` method to avoid memory leaks.
@@ -62,7 +61,6 @@ class MyComponent extends React.Component {
     return <div>My Component</div>;
   }
 }
-
 ```
 
 1. **Neglecting Performance Optimization:**
@@ -92,7 +90,6 @@ const ParentComponent = () => {
     </div>
   );
 };
-
 ```
 
 Solution: Memoize the expensive component using the `React.memo` higher-order component or the `useMemo` hook.
@@ -117,7 +114,6 @@ const ParentComponent = () => {
     </div>
   );
 };
-
 ```
 
 1. **Not Handling State Management Properly:**
@@ -153,7 +149,6 @@ const ChildComponent = ({ count, increment }) => {
     </div>
   );
 };
-
 ```
 
 Solution: Lift up the shared state to the parent component and pass it down as props to avoid inconsistencies.
@@ -186,7 +181,6 @@ const ChildComponent = ({ count, increment }) => {
     </div>
   );
 };
-
 ```
 
 1. **Failing to Follow Best Practices:**
@@ -213,7 +207,6 @@ const MyComponent = () => {
     </div>
   );
 };
-
 ```
 
 Solution: Break the code into smaller, reusable components and separate concerns.
@@ -247,7 +240,6 @@ const MyComponent = () => {
     </div>
   );
 };
-
 ```
 
 1. **Lack of Testing:**
@@ -274,7 +266,6 @@ const MyComponent = () => {
     </div>
   );
 };
-
 ```
 
 Solution: Write unit tests using testing libraries like Jest and React Testing Library to ensure the correctness of your components.
@@ -308,7 +299,6 @@ test('MyComponent increments count on button click', () => {
 
   expect(countText).toHaveTextContent('Count: 1');
 });
- 
 ```
 
 Conclusion: As a junior React developer, making mistakes is part of the learning process. However, recognizing and avoiding common mistakes can help you grow faster and become a more proficient React developer. By understanding the React component lifecycle, optimizing performance, managing state effectively, following best practices, and embracing testing, you can build high-quality React applications. Remember to
